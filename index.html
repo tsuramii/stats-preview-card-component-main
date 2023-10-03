@@ -17,24 +17,24 @@
 
 <body class="font-inter bg-verydarkblue text-white">
   <main class="min-h-[95vh] flex items-center justify-center">
-    <section class="max-w-xs m-10 rounded-lg bg-darkdesaturatedblue text-center">
-      <div class="relative">
+    <section class="max-w-xs m-10 rounded-lg bg-darkdesaturatedblue text-center lg:text-left lg:max-w-4xl lg:flex flex-row-reverse">
+      <div class="relative lg:w-1/2">
         <picture>
           <source srcset="./images/image-header-mobile.jpg" media="(max-width: 767px)">
           <source srcset="./images/image-header-desktop.jpg" media="(min-width: 768px)">
-          <img src="./images/image-header-mobile.jpg" alt="An office full of workers" class="rounded-t-lg">
+          <img src="./images/image-header-mobile.jpg" alt="An office full of workers" class="w-full rounded-t-lg lg:rounded-t-none lg:rounded-r-lg">
         </picture>
-        <div class="absolute inset-0 bg-softviolet/50 rounded-lg"></div>
+        <div class="absolute inset-0 bg-softviolet/50 rounded-lg lg:rounded-t-none lg:rounded-r-lg"></div>
       </div>
-      <div class="px-9 py-4">
-        <h1 class="text-xl my-3 mb-3 font-semibold">Get <span class="text-softviolet">insights</span> that help your
+      <div class="px-9 py-4 lg:p-12 lg:w-1/2">
+        <h1 class="text-xl my-4 font-semibold lg:text-3xl">Get <span class="text-softviolet">insights</span> that help your
           business
           grow.</h1>
-        <p class="text-xs text-white/50">Discover the benefits of data analytics and make better decisions regarding
+        <p class="text-xs text-white/50 leading-6 lg:text-sm">Discover the benefits of data analytics and make better decisions regarding
           revenue, customer
           experience, and overall efficiency.</p>
         <ul
-          class="font-lexenddeca m-5 grid grid-rows-3 gap-y-5 [&>li>span]:block [&>li>span]:text-[0.6rem] [&>li>span]:uppercase [&>li>span]:text-white/50">
+          class="font-lexenddeca my-5 lg:mt-16 lg:mb-0 grid grid-rows-3 lg:grid-rows-1 lg:grid-cols-3 gap-y-5 [&>li>span]:block [&>li>span]:text-[0.6rem] [&>li>span]:uppercase [&>li>span]:text-white/50">
           <li>10k+ <span>companies</span></li>
           <li>314 <span>templates</span></li>
           <li>12M+ <span>queries</span></li>
