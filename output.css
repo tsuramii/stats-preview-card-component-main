@@ -562,6 +562,14 @@ video {
   display: none;
 }
 
+.min-h-\[5vh\] {
+  min-height: 5vh;
+}
+
+.min-h-\[95vh\] {
+  min-height: 95vh;
+}
+
 .flex-grow {
   flex-grow: 1;
 }
@@ -586,6 +594,15 @@ video {
   border-width: 1px;
 }
 
+.bg-darkdesaturatedblue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(27 25 56 / var(--tw-bg-opacity));
+}
+
+.text-center {
+  text-align: center;
+}
+
 .font-lexenddeca {
   font-family: Lexend Deca, sans-serif;
 }
@@ -594,15 +611,54 @@ video {
   font-family: Inter, sans-serif;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .text-red-500 {
   --tw-text-opacity: 1;
   color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-softviolet {
+  --tw-text-opacity: 1;
+  color: rgb(170 92 219 / var(--tw-text-opacity));
 }
 
 .underline {
   text-decoration-line: underline;
 }
 
+.underline-offset-2 {
+  text-underline-offset: 2px;
+}
+
 .outline {
   outline-style: solid;
+}
+
+.transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.hover\:text-softviolet\/50:hover {
+  color: rgb(170 92 219 / 0.5);
+}
+
+.\[\&\>a\]\:text-white>a {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.\[\&\>a\]\:text-softviolet>a {
+  --tw-text-opacity: 1;
+  color: rgb(170 92 219 / var(--tw-text-opacity));
 }
