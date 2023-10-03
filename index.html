@@ -15,18 +15,35 @@
   <link href="./output.css" rel="stylesheet">
 </head>
 
-<body>
-  <main class="min-h-[95vh]">
-    Get insights that help your business grow.
+<body class="font-inter bg-verydarkblue text-white">
+  <main class="min-h-[95vh] flex items-center justify-center">
+    <section class="max-w-xs m-10 rounded-lg bg-darkdesaturatedblue text-center">
+      <div class="relative">
+        <picture>
+          <source srcset="./images/image-header-mobile.jpg" media="(max-width: 767px)">
+          <source srcset="./images/image-header-desktop.jpg" media="(min-width: 768px)">
+          <img src="./images/image-header-mobile.jpg" alt="An office full of workers" class="rounded-t-lg">
+        </picture>
+        <div class="absolute inset-0 bg-softviolet/50 rounded-lg"></div>
+      </div>
+      <div class="px-9 py-4">
+        <h1 class="text-xl my-3 mb-3 font-semibold">Get <span class="text-softviolet">insights</span> that help your
+          business
+          grow.</h1>
+        <p class="text-xs text-white/50">Discover the benefits of data analytics and make better decisions regarding
+          revenue, customer
+          experience, and overall efficiency.</p>
+        <ul
+          class="font-lexenddeca m-5 grid grid-rows-3 gap-y-5 [&>li>span]:block [&>li>span]:text-[0.6rem] [&>li>span]:uppercase [&>li>span]:text-white/50">
+          <li>10k+ <span>companies</span></li>
+          <li>314 <span>templates</span></li>
+          <li>12M+ <span>queries</span></li>
+        </ul>
+      </div>
+    </section>
 
-    Discover the benefits of data analytics and make better decisions regarding revenue, customer
-    experience, and overall efficiency.
-
-    10k+ companies
-    314 templates
-    12m+ queries
   </main>
-  <footer class="text-center text-sm min-h-[5vh] text-white [&>a]:text-softviolet bg-darkdesaturatedblue">
+  <footer class="text-center text-sm min-h-[5vh] text-white [&>a]:text-softviolet">
     Challenge by
     <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
       class="underline underline-offset-2 transition-colors hover:text-softviolet/50">Frontend
